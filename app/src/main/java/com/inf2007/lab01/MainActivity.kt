@@ -55,9 +55,7 @@ fun MainScreen() {
 
                 Button(
                     onClick = {
-                        if (username.isNotBlank()) {
-                            showGreeting = true
-                        }
+                        showGreeting = username.isNotBlank()
                     },
                     modifier = Modifier
                         .fillMaxWidth()
